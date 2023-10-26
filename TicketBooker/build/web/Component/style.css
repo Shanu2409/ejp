@@ -1,0 +1,52 @@
+.navbar .nav-item:hover .nav-link {
+    background-color: white;
+    color: blue;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.color-danger {
+    color: red;
+}
+
+/* toast */
+#toast {
+    min-width: 300px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -125px;
+    background: #b1ff6f;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    z-index: 1;
+    font-size: 18px;
+    visibility: hidden;
+    box-shadow: 0px 0px 100px #b1ff6f
+}
+
+#toast.display {
+    visibility: visible;
+    animation: fadeIn 0.5, fadeOut 0.5s 2.5s;
+}
+
+@keyframes fadeIn {from { bottom:0;
+                          opacity: 0;
+                   }
+
+                   to {
+                       bottom: 30px;
+                       opacity: 1;
+                   }
+
+}
+@keyframes fadeOut {form { bottom:30px;
+                           opacity: 1;
+                    }
+
+                    to {
+                        bottom: 0;
+                        opacity: 0;
+                    }
+}

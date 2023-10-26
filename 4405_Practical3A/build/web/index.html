@@ -1,0 +1,12 @@
+<html><body>
+<form action="FileUploadServlet" method="post" enctype="multipart/form-data">
+Select File to Upload:<input type="file" name="file" id="file">
+Destination <input type="text" value="/tmp" name="destination">
+<br>
+<input type="submit" value="Upload file" name="upload" id="upload">
+</form>
+<h1>File Download Application</h1>
+Click <a href="DownloadServlet?filename=5.pdf">Practical Topics</a>
+<br/><br/>
+Click <a href="DownloadServlet?filename=Practical2.pdf">Practical 2</a>
+</body></html>

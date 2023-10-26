@@ -1,0 +1,10 @@
+.navbar .nav-item:hover .nav-link {
+    background-color: white;
+    color: blue;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.color-danger {
+    color: red;
+}
